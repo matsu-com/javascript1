@@ -1,0 +1,14 @@
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.timerButton {
+  display: flex;
+  justify-content: center;
+}
