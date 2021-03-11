@@ -21,7 +21,7 @@ function time() {
   timeElement.innerHTML = `${h}:${min}:${s}.${m.slice(-1)}`
 ;}
 
-start.addEventListener('click', function(e) {
+start.addEventListener('click', function() {
   if (interval !== null) { return; }
   let pre = new Date();
 
@@ -33,12 +33,12 @@ start.addEventListener('click', function(e) {
   }, 10);
 });
 
-stop.addEventListener('click', function(e) {
+stop.addEventListener('click', function() {
   clearInterval(interval);
   interval = null;
 });
 
-reset.addEventListener('click', function(e) {
+reset.addEventListener('click', function() {
   elapsed = 0;
   time();
 });
